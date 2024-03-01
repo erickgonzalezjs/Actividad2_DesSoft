@@ -13,7 +13,7 @@ def estudiantes_calcular_promedio(notas):
 
 def estudiantes_mostrar_estadisticas_estudiantes():
     """
-    Muestra estadísticas de los estudiantes.
+    Muestra estadísticas de los estudiantes y permite dejar un comentario al final.
     """
     estudiantes = [
         {"nombre": "Juan", "notas": [35, 40, 48]},
@@ -30,3 +30,15 @@ def estudiantes_mostrar_estadisticas_estudiantes():
         print("Notas:", notas)
         print("Promedio:", promedio)
         print()
+
+    dejar_comentario()
+
+def dejar_comentario():
+    """
+    Permite a los estudiantes dejar un comentario sobre la clase.
+    """
+    print("\n¡Es tu oportunidad de dejar un comentario sobre la clase!")
+    comentario = input("Por favor, escribe tu comentario: ")
+    print("\n¡Gracias por tu comentario! Aquí está lo que opinas sobre la clase:")
+    print(comentario)
+
